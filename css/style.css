@@ -23,10 +23,20 @@ html, body {
 
 #app_main{
     height: calc(100vh - 92px);
+    position: relative;
     background-color: purple;
-    .container{
+    .sidebar{
         width: calc((100% / 12) * 2);
-        height: auto;
+        height: 100%;
+        color: aliceblue;
+    }
+    header{
+        background-color: var(--blue-dark);
+        height: 88px;
+        width: calc((100% / 12) * 10);
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 }
 
