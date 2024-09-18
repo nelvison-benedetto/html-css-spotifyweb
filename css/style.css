@@ -24,52 +24,71 @@ html, body {
 .bg-black-light{background-color: var(--black-light);}
 
 #app_main{
-    height: calc(100vh - 92px);
+    height: calc(100vh - 60px);
+    width: 100%;
     display: flex;
     flex-direction: row;
     .sidebar{
+        height: 100%; 
+        width: calc((100% / 12) * 1);
+        .sidebar-md-lg{display:none;}
+        @media(min-width:600px){
+            width: calc((100% /12)*5); 
+            .sidebar-sm{display: none;} 
+            .sidebar-md-lg{display:block;}
+        }
+    }
+
+    .sidebar-sm{
+        width: 100%; 
         padding-top: 2px;
         background-color: var(--black);
         height: 100%;
-        width: calc((100% / 12) * 1); 
         overflow: hidden; 
         display: flex;
         flex-direction: column;
         gap: 0.4rem;
-
         /* white-space: nowrap; 
-        text-overflow: ellipsis; */
-        
-
+        text-overflow: ellipsis; */ 
         @media(min-width:600px){
-            background-color: burlywood;
-            width: calc((100% / 12)*2); 
-            overflow:visible;
         }
     }
-    .sidebar a{ display: flex; justify-content: center;} 
-    .sidebar a img{ 
-        width: 70%;
+    .sidebar-sm a{ display: flex; justify-content: center;} 
+    .sidebar-sm a img{ width: 70%;}
+
+    /* SIDEBAR 2nd VERSION */
+    .sidebar-md-lg{
+        width: 100%;
+        background-color: blue;
     }
+    .sidebar-md-lg .container{margin: 1rem 1rem 0 1rem;}
+    .sidebar-md-lg a{ display: flex; justify-content: start;}
+    .sidebar-md-lg a img{width: 70%;}
+
+
     .header_main{
         background-color: #adff2f;
         height: 100%;
-        width: 100%;
+        width: calc((100% / 12) * 11);
+
+        @media(min-width:600px){
+            width: calc((100% / 12) * 7);
+        }
     }
     header{
         background-color: var(--blue-dark);
-        height: 88px;
-        width: calc((100% / 12) * 12);
+        height: 60px;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: end;
     }
     .btn_header{
-        margin-right: 1rem;
-        font-size: 0.8rem;
+        margin-right: 0.8rem;
+        font-size: 0.6rem;
         text-transform: uppercase;
         color: var(--white);
-        padding: 0.8rem 1.8rem;
+        padding: 0.6rem 1.8rem;
         background-color: transparent;
         border: 1px solid var(--white);
         border-radius: 1.8rem;
@@ -80,7 +99,7 @@ html, body {
 #app_footer{
     .container{
         background-color: var(--black-light);
-        height: 92px;
+        height: 60px;
         /* margin: auto; */
     }
 }
