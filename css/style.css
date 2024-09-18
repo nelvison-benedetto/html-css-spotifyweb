@@ -4,7 +4,8 @@
 img{max-width: 100%;}
 html, body {
     height: 100vh;
-    color: aliceblue;
+    overflow: hidden;
+    color: antiquewhite;
 }
 
 #debug *{border: 1px dashed black;}
@@ -31,20 +32,31 @@ html, body {
     .sidebar{
         height: 100%;
         width: calc((100% / 12) * 2); 
-        
+
+        @media(max-width:568px){
+            width: calc((100% / 12) * 1); 
+            overflow: hidden; /* Nasconde il testo che esce */
+            white-space: nowrap; /* Evita l'andare a capo */
+            text-overflow: ellipsis;
+           
+        }
     }
     .header_main{
         background-color: #adff2f;
         height: 100%;
-        width: calc((100% / 12) * 10);
+        width: auto;
     }
     header{
         background-color: var(--blue-dark);
         height: 88px;
-        width: calc((100% / 12) * 10);
-        position: absolute;
+        width: calc((100% / 12) * 12);
+        /* position: absolute; */
         top: 0;
         right: 0;
+
+        @media(max-width: 568px){
+            background-color: aqua;
+        }
     }
 }
 
