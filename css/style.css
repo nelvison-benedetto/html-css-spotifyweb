@@ -4,6 +4,7 @@
 img{max-width: 100%;}
 html, body {
     height: 100vh;
+    color: aliceblue;
 }
 
 #debug *{border: 1px dashed black;}
@@ -23,12 +24,19 @@ html, body {
 
 #app_main{
     height: calc(100vh - 92px);
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* position: relative; */
     background-color: purple;
     .sidebar{
-        width: calc((100% / 12) * 2);
         height: 100%;
-        color: aliceblue;
+        width: calc((100% / 12) * 2); 
+        
+    }
+    .header_main{
+        background-color: #adff2f;
+        height: 100%;
+        width: calc((100% / 12) * 10);
     }
     header{
         background-color: var(--blue-dark);
