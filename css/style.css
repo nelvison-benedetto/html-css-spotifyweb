@@ -5,7 +5,7 @@ img{max-width: 100%;}
 html, body {
     height: 100vh;
     overflow: hidden;
-    color: antiquewhite;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 #debug *{border: 1px dashed black;}
@@ -21,11 +21,15 @@ html, body {
 }
 
 .w-100{width: 100%;}
+.h-100{height: 100%;}
 .bg-black{background-color: var(--black);}
 .bg-black-light{background-color: var(--black-light);}
+.d-flex{display: flex;}
+.f-col{flex-direction: column;}
+.f-row{flex-direction: row;}
 
 #app_main{
-    height: calc(100vh - 60px);
+    height: calc(100vh - 70px);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -34,12 +38,11 @@ html, body {
         width: calc((100% / 12) * 1);
         .sidebar-md-lg{display:none;}
         @media(min-width:600px){
-            width: calc((100% /12)*5); 
+            width: calc((100% /12)*4); 
             .sidebar-sm{display: none;} 
             .sidebar-md-lg{display:block;}
         }
     }
-
     .sidebar-sm{
         width: 100%; 
         padding-top: 2px;
@@ -60,7 +63,8 @@ html, body {
     .sidebar-md-lg{
         width: 100%;
         height: 100%;
-        background-color: blue;
+        color: var(--white);
+        background-color: var(--black);
 
         .container{margin: 1rem 1rem 0rem 1rem;}
         .logo_md_lg img{width: 70%;}
@@ -88,21 +92,18 @@ html, body {
             ul{
                 display: flex;
                 flex-direction: column;
+                list-style: none;
                 gap: 0.6rem;
             }
         }
-
     }
-
-
-
     .header_main{
         background-color: #adff2f;
         height: 100%;
         width: calc((100% / 12) * 11);
 
         @media(min-width:600px){
-            width: calc((100% / 12) * 7);
+            width: calc((100% / 12) * 8);
         }
     }
     header{
@@ -126,9 +127,23 @@ html, body {
 }
 
 #app_footer{
-    .container{
-        background-color: var(--black-light);
-        height: 60px;
-        /* margin: auto; */
+    section{
+        background-color: var(--gray);
+        color: var(--white);
+        height: 70px;    
+
+        .container{
+            width: 96%;
+            height: 80%;
+            margin: 0.3rem auto 0;
+
+            .current_song{
+                width: 20%; height: 100%; display: block;
+                img{height: 100%;}
+            }
+
+    
+            
+        }
     }
 }
