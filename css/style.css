@@ -37,6 +37,7 @@ html, body {
     .sidebar{
         height: 100%; 
         width: calc((100% / 12) * 1);
+        overflow: hidden;
         .sidebar-md-lg{display:none;}
         @media(min-width:600px){
             width: calc((100% /12)*4); 
@@ -125,35 +126,42 @@ html, body {
         }
         .visual{
             height: calc(100% - 60px);  /* //INFO xk al 100% non rimane dentro il container .header_main */
+            overflow-y: auto;
             width: 100%;
             color: var(--white);
             display: block;
             padding: 1rem;
+            font-size: 0.8rem;
             background-color: var(--blue-light);
             
-            .recently_played{
-                .row{
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
+            .custom_music{margin-top: 2rem;}
+            h1{padding-bottom: 1rem;}
+            .row{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
 
-                    .card{
-                        background-color: brown;
-                        min-height: 30px;
-                        width: calc((100%/12)*6);
-
-                        @media (min-width:600px){
-                            width: calc((100%/12)*4);
-                        }
-                        @media (min-width:700px){
-                            width: calc((100%/12)*3);
-                        }
-                        @media (min-width:1100px){
-                            width: calc((100%/12)*2);
-                        }
+                .card{
+                    background-color: brown;
+                    min-height: 30px;
+                    width: calc((100%/12)*6);
+                    padding: 0 0.4rem 0.3rem;
+                    display: flex; flex-direction: column; justify-content: start;
+                    button{display: flex; align-items: center;justify-content: center;}
+                    h3{text-align: center;}
+                    span{text-align: center;}
+                    @media (min-width:600px){
+                        width: calc((100%/12)*4);
+                    }
+                    @media (min-width:700px){
+                        width: calc((100%/12)*3);
+                    }
+                    @media (min-width:1100px){
+                        width: calc((100%/12)*2);
                     }
                 }
             }
+            
 
         }
     }
