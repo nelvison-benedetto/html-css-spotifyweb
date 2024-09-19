@@ -28,6 +28,9 @@ html, body {
 .d-flex{display: flex;}
 .f-col{flex-direction: column;}
 .f-row{flex-direction: row;}
+.c-gray{color: var(--gray);}
+.c-white{color: var(--white);}
+.c-black{color: var(--black);}
 
 #app_main{
     height: calc(100vh - 70px);
@@ -38,6 +41,7 @@ html, body {
         height: 100%; 
         width: calc((100% / 12) * 1);
         overflow: hidden;
+        background-color: var(--black);
         .sidebar-md-lg{display:none;}
         @media(min-width:600px){
             width: calc((100% /12)*4); 
@@ -48,7 +52,6 @@ html, body {
     .sidebar-sm{
         width: 100%; 
         padding-top: 2px;
-        background-color: var(--black);
         height: 100%;
         overflow: hidden; 
         display: flex;
@@ -64,8 +67,7 @@ html, body {
     .sidebar-md-lg{
         width: 100%;
         height: 100%;
-        color: var(--white);
-        background-color: var(--black);
+        color: var(--gray);
 
         .container{margin: 1rem 1rem 0rem 1rem;}
         .logo_md_lg img{width: 70%;}
@@ -87,7 +89,7 @@ html, body {
                 align-items: center;
                 gap:0.4rem;
                 padding-bottom: 0.6rem;
-                .fa-solid{background-color: var(--gray); padding: 0.4rem;}
+                .fa-solid{background-color: var(--gray); padding: 0.2rem; font-size: 1.4rem;}
             }
             ul{
                 display: flex;
@@ -135,7 +137,12 @@ html, body {
             background-color: var(--blue-light);
             
             .custom_music{margin-top: 2rem;}
-            h1{padding-bottom: 1rem;}
+            .popular_artists{margin-top: 2rem;}
+            .popular_artists .row .card button{background-color: var(--blue-light);}
+            .popular_artists .row .card button img {border-radius: 50%;}
+            h1{padding-bottom: 0.5rem;}
+            /* .custom_music .descript{background-color: purple;padding-top: 1rem;} */
+
             .row{
                 display: flex;
                 flex-direction: row;
@@ -146,7 +153,7 @@ html, body {
                     min-height: 30px;
                     width: calc((100%/12)*6);
                     padding: 0 0.4rem 0.3rem;
-                    display: flex; flex-direction: column; justify-content: start;
+                    display: flex; flex-direction: column; justify-content: start; gap:0.4rem;
                     button{display: flex; align-items: center;justify-content: center;}
                     h3{text-align: center;}
                     span{text-align: center;}
