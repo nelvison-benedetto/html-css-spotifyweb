@@ -59,7 +59,6 @@ html, body {
         a img{ width: 70%;}
 
     }
-
     /* SIDEBAR 2nd VERSION */
     .sidebar-md-lg{
         width: 100%;
@@ -82,7 +81,6 @@ html, body {
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
-
             .add_playlist{
                 display: flex; 
                 align-items: center;
@@ -100,30 +98,37 @@ html, body {
     }
     .header_main{
         background-color: #adff2f;
-        height: 100%;
+        height: calc(100% - 0px);
         width: calc((100% / 12) * 11);
 
         @media(min-width:600px){
             width: calc((100% / 12) * 8);
         }
-    }
-    header{
-        background-color: var(--blue-dark);
-        height: 60px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: end;
-    }
-    .btn_header{
-        margin-right: 0.8rem;
-        font-size: 0.6rem;
-        text-transform: uppercase;
-        color: var(--white);
-        padding: 0.6rem 1.8rem;
-        background-color: transparent;
-        border: 1px solid var(--white);
-        border-radius: 1.8rem;
+        header{
+            background-color: var(--blue-dark);
+            height: 60px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+            .btn_header{
+                margin-right: 0.8rem;
+                font-size: 0.6rem;
+                text-transform: uppercase;
+                color: var(--white);
+                padding: 0.6rem 1.8rem;
+                background-color: transparent;
+                border: 1px solid var(--white);
+                border-radius: 1.8rem;
+            }
+        }
+        .visual{
+            height: calc(100% - 60px);  /* //INFO xk al 100% non rimane dentro il container .header_main */
+            width: 100%;
+            display: block;
+            background-color: var(--blue-light);
+        }
     }
 }
 
@@ -196,8 +201,6 @@ html, body {
                     height: 10%;
                 }
             }
-    
-            
         }
     }
 }
