@@ -13,6 +13,7 @@ html, body {
 :root {
     --black: #000000;
     --white: #ffffff;
+    --gray: #a3a3a3;
     --green: #adff2f;
     --blue-dark: #080b12;
     --blue-light: #141922;
@@ -50,20 +51,49 @@ html, body {
         gap: 0.4rem;
         /* white-space: nowrap; 
         text-overflow: ellipsis; */ 
-        @media(min-width:600px){
-        }
+        a{ display: flex; justify-content: center;}
+        a img{ width: 70%;}
+
     }
-    .sidebar-sm a{ display: flex; justify-content: center;} 
-    .sidebar-sm a img{ width: 70%;}
 
     /* SIDEBAR 2nd VERSION */
     .sidebar-md-lg{
         width: 100%;
+        height: 100%;
         background-color: blue;
+
+        .container{margin: 1rem 1rem 0rem 1rem;}
+        .logo_md_lg img{width: 70%;}
+        .icon_text_md_lg{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            a {width: 15%; display: flex; align-items: center;}
+            img{width: 80%;}
+        }
+        .playlist{
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            .add_playlist{
+                display: flex; 
+                align-items: center;
+                gap:0.4rem;
+                padding-bottom: 0.6rem;
+                .fa-solid{background-color: var(--gray); padding: 0.4rem;}
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 0.6rem;
+            }
+        }
+
     }
-    .sidebar-md-lg .container{margin: 1rem 1rem 0 1rem;}
-    .sidebar-md-lg a{ display: flex; justify-content: start;}
-    .sidebar-md-lg a img{width: 70%;}
+
 
 
     .header_main{
@@ -93,7 +123,6 @@ html, body {
         border: 1px solid var(--white);
         border-radius: 1.8rem;
     }
-    
 }
 
 #app_footer{
