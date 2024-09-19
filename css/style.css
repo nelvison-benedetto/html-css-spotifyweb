@@ -167,9 +167,9 @@ html, body {
                     span{text-align: center;}
                     
                     button img{position:relative; }
-                    .opacity_dark{ position: absolute; z-index: 1; background-color: rgba(0, 0, 0, 0.5); width:15%;height:23%;}
-                    .display_play{z-index:2; position:absolute; font-size: 3rem; color: var(--white); }
-                    button:hover .display_play{display:none;}
+                    .opacity_dark{display:none; position: absolute; z-index: 1; background-color: rgba(0, 0, 0, 0.5); width:9%;height:22%;}
+                    .display_play{z-index:2; position:absolute; font-size: 3rem; color: var(--white); display:none;}
+                    button:hover .display_play{display:block;}
                     button:hover .opacity_dark{display:block;}
 
                     @media (min-width:600px){
