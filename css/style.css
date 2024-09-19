@@ -40,6 +40,7 @@ html, body {
     .sidebar{
         height: 100%; 
         width: calc((100% / 12) * 1);
+
         overflow: hidden;
         background-color: var(--black);
         .sidebar-md-lg{display:none;}
@@ -72,6 +73,8 @@ html, body {
         .container{margin: 1rem 1rem 0rem 1rem;}
         .logo_md_lg img{width: 70%;}
         .icon_text_md_lg{
+            a, span{cursor: pointer; }
+            a:hover, span:hover{color: var(--white);}
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -84,7 +87,11 @@ html, body {
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
+            span ul li{cursor: pointer;}
+            span ul li:hover{color: var(--white);}
             .add_playlist{
+                span{cursor: pointer;}
+                span:hover{color: var(--white);}
                 display: flex; 
                 align-items: center;
                 gap:0.4rem;
@@ -147,9 +154,10 @@ html, body {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
+                margin: 0 -0.55rem;
 
                 .card{
-                    background-color: brown;
+                    /* background-color: brown; */
                     min-height: 30px;
                     width: calc((100%/12)*6);
                     padding: 0 0.4rem 0.3rem;
@@ -157,6 +165,13 @@ html, body {
                     button{display: flex; align-items: center;justify-content: center;}
                     h3{text-align: center;}
                     span{text-align: center;}
+                    
+                    button img{position:relative; }
+                    .opacity_dark{ position: absolute; z-index: 1; background-color: rgba(0, 0, 0, 0.5); width:15%;height:23%;}
+                    .display_play{z-index:2; position:absolute; font-size: 3rem; color: var(--white); }
+                    button:hover .display_play{display:none;}
+                    button:hover .opacity_dark{display:block;}
+
                     @media (min-width:600px){
                         width: calc((100%/12)*4);
                     }
