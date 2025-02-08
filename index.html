@@ -8,80 +8,114 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body id="debug">
+<body id="">
     <header id="app_header">
     </header>
     <main id="app_main">
         <div class="sidebar">
-            <div class="sidebar-sm">
-                <a href="#">
+
+            <div class="sidebar1">
+                <div>
                     <img src="./assets/img/logo-small.svg" alt="logo small">  
-                </a>
-                <a href="#">
-                    <img src="./assets/img/home.svg" alt="home">
-                </a>
-                <a href="#">
-                    <img src="./assets/img/search.svg" alt="search">
-                </a>
-                <a href="#">
-                    <img src="./assets/img/libreria.svg" alt="library">
-                </a>
-            </div>
-            <div class="sidebar-md-lg">
-                <div class="container">
-                    <a class="logo_md_lg">
-                        <img src="./assets/img/logo.svg" alt="logo" class="">
-                    </a>
-                    <section>
-                        <span class="icon_text_md_lg">
-                            <a href="#" class="">
-                                <img src="./assets/img/home.svg" alt="home">
-                            </a>
-                            <span class="c-white">Home</span>
-                        </span>
-                        <span class="icon_text_md_lg">
-                            <a href="#" class="">
-                                <img src="./assets/img/search.svg" alt="search">
-                            </a>
-                            <span>Cerca</span>
-                        </span>
-                        <span class="icon_text_md_lg">
-                            <a href="#" class="">
-                                <img src="./assets/img/libreria.svg" alt="library">
-                            </a>
-                            <span>La tua libreria</span>
-                        </span>
-                    </section>
-                    <section class="playlist">
-                        <h1 class="c-white">Playlist</h1>
-                        <span>
-                            <span class="add_playlist">
-                                <i class="fa-solid fa-plus c-black"></i>
-                                <span>Crea Playlist</span>
-                            </span>
-                            <ul>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                                <li>Nome Playlist</li>
-                            </ul>
-                        </span>
-                    </section>
                 </div>
-
-
+                <div>
+                    <img src="./assets/img/home.svg" alt="home">
+                </div>
+                <div>
+                    <img src="./assets/img/search.svg" alt="search">
+                </div>
+                <div>
+                    <img src="./assets/img/libreria.svg" alt="library">
+                </div>
             </div>
+
+            <div class="sidebar2">
+                <a class="logo">
+                    <img src="./assets/img/logo.svg" alt="logo" class="">
+                </a>
+                <section class="navigation">
+                    <span class="icon_text_md_lg">
+                        <a href="#" class="">
+                            <img src="./assets/img/home.svg" alt="home">
+                        </a>
+                        <span class="c-white" style="">Home</span>
+                    </span>
+                    <span class="icon_text_md_lg" style="padding-top: 0.2rem;">
+                        <a href="#" class="">
+                            <img src="./assets/img/search.svg" alt="search">
+                        </a>
+                        <span>Cerca</span>
+                    </span>
+                    <span class="icon_text_md_lg">
+                        <a href="#" class="">
+                            <img src="./assets/img/libreria.svg" alt="library">
+                        </a>
+                        <span>La tua libreria</span>
+                    </span>
+                </section>
+
+                <section class="playlist">
+                    <h3 class="c-white">PLAYLIST</h3>
+                    <span class="">
+                        <div>
+                            <i class="fa-solid fa-plus c-black"></i>
+                        </div>
+                        <h3>Crea Playlist</h3>
+                    </span>
+                    <ul>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </section>
+                <section class="myprofile">
+                    <span><i class="fa-solid fa-download" style="padding: 0rem 0.3rem 0.2rem 0;"></i><span>Installa app</span></span>
+                    <hr style="border:none; height: 0.07rem; background-color: gray; border-radius: 1.2rem; margin-top:0.18rem; width: 100%;">
+                    <h4 style="margin-top: 0.18rem; color: white;"><i class="fa-solid fa-user" style="padding-right:0.3rem;"></i><span>Nelvis Benedet</span></h4>
+                </section>
+            </div>
+
+
         </div>
+
         <div class="header_main">
             <header>
                 <button class="btn_header">Effettua l'upgrade</button>  
             </header>
             <div class="visual">
+
+                <div class="explore_types">
+                    <div class="row_Explore">
+                        <div class="card_Explore">
+                            <span>IN EVIDENZA</span>
+                        </div>
+                        <div class="card_Explore">
+                            <span>PODCAST</span>
+                        </div>
+                        <div class="card_Explore">
+                            <span>CLASSIFICHE</span>
+                        </div>
+                        <div class="card_Explore">
+                            <span>GENERI E MOOD</span>
+                        </div>
+                        <div class="card_Explore">
+                            <span>NUOVE USCITE</span>
+                        </div>
+                        <div class="card_Explore">
+                            <span>SCOPRI</span>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="recently_played">
-                    <h1>Recently played</h1>
+                    <div class="type_playlist">
+                        <h2>Recently played</h2>
+                    </div>
                     <div class="row">
 
                         <div class="card">
@@ -90,8 +124,7 @@
                                 <div class="opacity_dark"></div>
                                 <i class="fa-regular fa-circle-play display_play"></i>
                             </button>
-                            </button>
-                            <h3>Heavy Metal</h3>
+                            <h4>Heavy Metal</h4>
                             <span class="c-gray">Subtitle</span>
                         </div>
 
@@ -101,7 +134,7 @@
                                 <div class="opacity_dark"></div>
                                 <i class="fa-regular fa-circle-play display_play"></i>
                             </button>
-                            <h3>Stranger Things,Vol.1(a Netflix Original Series Soundtrack)</h3>
+                            <h4>Stranger Things,Vol.1(a Netflix Original Series Soundtrack)</h4>
                             <span class="c-gray">Kyle Dixon & Michael Stein</span>
                         </div>
 
@@ -111,8 +144,7 @@
                                 <div class="opacity_dark"></div>
                                 <i class="fa-regular fa-circle-play display_play"></i>
                             </button>
-                            </button>
-                            <h3>A quiet place</h3>
+                            <h4>A quiet place</h4>
                             <span class="c-gray">Subtitle</span>
                         </div>
                         
@@ -122,90 +154,87 @@
                                 <div class="opacity_dark"></div>
                                 <i class="fa-regular fa-circle-play display_play"></i>
                             </button>
-                            </button>
-                            <h3>Split</h3>
+                            <h4>Split</h4>
                             <span class="c-gray">Subtitle</span>
                         </div>
 
                         <div class="card">
-                            <button>
-                                <img src="./assets/img/cure.jpeg" alt="a cure for wellness">
-                                <div class="opacity_dark"></div>
-                                <i class="fa-regular fa-circle-play display_play"></i>
-                            </button>
-                            </button>
-                            <h3>A cure for wellness</h3>
-                            <span class="c-gray">Subtitle</span>
+                             <button>
+                                 <img src="./assets/img/cure.jpeg" alt="a cure for wellness">
+                                 <div class="opacity_dark"></div>
+                                 <i class="fa-regular fa-circle-play display_play"></i>
+                             </button>
+                             <h4>A cure for wellness</h4>
+                             <span class="c-gray">Subtitle</span>
                         </div>
 
                         <div class="card">
-                            <button>
-                                <img src="./assets/img/sinister.jpeg" alt="sinister">
-                                <div class="opacity_dark"></div>
-                                <i class="fa-regular fa-circle-play display_play"></i>
-                            </button>
-                            </button>
-                            <h3>Sinister</h3>
-                            <span class="c-gray">Subtitle</span>
+                                <button>
+                                    <img src="./assets/img/sinister.jpeg" alt="sinister">
+                                    <div class="opacity_dark"></div>
+                                    <i class="fa-regular fa-circle-play display_play"></i>
+                                </button>
+                                </button>
+                                <h4>Sinister</h4>
+                                <span class="c-gray">Subtitle</span>
                         </div>
 
                     </div>
                 </div>
                 <div class="custom_music">
-                    <h1>Creato per John Doe</h1>
-                    <span class="descript">Più ascolti, più accurati saranno i suggerimenti</span>
+                    <div class="type_playlist">
+                        <h2>Creato per John Doe</h2>
+                        <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                    </div>
                     <div class="row">
 
                         <div class="card">
                             <button>
                                 <img src="./assets/img/radar.jpeg" alt="release radar">
-                                
                             </button>
-                            </button>
-                            <h3>Release Radar</h3>
+                            <h4>Release Radar</h4>
                         </div>
 
                         <div class="card">
                             <button>
                                 <img src="./assets/img/mixdaily.jpeg" alt="daily mix 1">
-                                
                             </button>
-                            </button>
-                            <h3>Daily Mix 1</h3>
+                            <h4>Daily Mix 1</h4>
                         </div>
 
                         <div class="card">
                             <button>
                                 <img src="./assets/img/mixdaily.jpeg" alt="daily mix 1">
-                                
                             </button>
-                            </button>
-                            <h3>Daily Mix 1</h3>
+                            <h4>Daily Mix 1</h4>
                         </div>
 
                     </div>
                 </div>
                 <div class="popular_artists">
-                    <h1>Artisti più popolari</h1>
-                    <span class="descript">Più ascolti, più accurati saranno i suggerimenti</span>
+                    <div class="type_playlist">
+                        <h2>Artisti più popolari</h2>
+                        <p>Più ascolti, più accurati saranno i suggerimenti.</p>
+                    </div>
                     <div class="row">
 
                         <div class="card">
                             <button>
                                 <img src="./assets/img/youg.jpeg" alt="lana del rey">
                             </button>
-                            <h3>Lana Del Rey</h3>
+                            <h4>Lana Del Rey</h4>
                         </div>
 
                         <div class="card">
                             <button>
                                 <img src="./assets/img/einaudi.jpeg" alt="ludovico einaudi">
                             </button>
-                            <h3>Ludovico Einaudi</h3>
+                            <h4>Ludovico Einaudi</h4>
                         </div>
 
                     </div>
                 </div>
+                
             </div>
         </div>
     </main>
@@ -213,39 +242,71 @@
     <footer id="app_footer">
         <section>
             <div class="container">
-                <div class="current_song">
-                    <img src="./assets/img/sinister.jpeg" alt="">
-                    <span class="d-flex f-col">
-                        <span><strong>Sinister</strong></span>
-                        <span>Brano nome</span>
-                    </span>
-                </div>
-                <div class="like_folder">
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-folder"></i>
-                </div>
-                <div class="play">
-                    <div class="icons">
-                        <i class="fa-solid fa-shuffle"></i>
-                        <i class="fa-solid fa-backward-step"></i>
-                        <i class="fa-regular fa-circle-play "></i>
-                        <i class="fa-solid fa-forward-step"></i>
-                        <i class="fa-solid fa-arrow-rotate-right"></i>
+
+                <div class="current_song" style="">
+                    <div style="margin-right:0.4rem; height:100%;">
+                        <img src="./assets/img/sinister.jpeg" alt="" style="height:100%; object-fit: cover;">
                     </div>
-                    <div class="time">
-                        <span>0:25</span>
-                        <hr>
-                        <span>4:35</span>
+                    <div class="the_song" style="margin-right:0.4rem; display:flex;">
+                        <div><strong>Sinister</strong></div>
+                        <div>Brano nome</div>
+                    </div>
+                    <div class="like_folder">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
                     </div>
                 </div>
-                <div class="features">
-                    <i class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-display"></i>
-                    <i class="fa-solid fa-volume-high"></i>
-                    <hr>
+
+                <div class="play ">
+                    <div class="icons" style="padding-bottom: 0.3rem;">
+                        <div class="col-2 d-flex justify-content-center align-items-start" style="margin-right:1.2rem;">
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-start" style="margin-right:1.2rem;">
+                            <i class="fa-solid fa-backward-step"></i>
+                        </div>
+                        <div class="col-4 d-flex justify-content-center align-items-start" style="margin-right:1.2rem;">
+                            <i class="fa-regular fa-circle-play "></i>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-start" style="margin-right:1.2rem;">
+                            <i class="fa-solid fa-forward-step"></i>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-start" style="">
+                            <i class="fa-solid fa-arrow-rotate-right"></i>
+                        </div>
+                    </div>
+                    <div class="time" style="">
+                        <div class="col-2 d-flex justify-content-center" style="margin-right:0.4rem;">
+                            <span>0:25</span>
+                        </div>
+                        <div class="col-8 d-flex justify-content-center" style="position:relative; top:0.3rem; margin-right:0.4rem;">
+                            <hr style="border: none; height: 0.3rem; border-radius: 1.6rem; width: 100%; background-color: darkgray;">
+                            <hr style="border: none; height: 0.3rem; border-radius: 1.6rem; background-color: white; position:absolute; width:10%;left:0;">
+                        </div>
+                        <div class="col-2 d-flex justify-content-center">
+                            <span>4:35</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="features ">
+                    <div class=" d-flex" style="margin-left:0.4rem; display:flex; align-items:center; position:relative;">
+                        <hr style="border: none; height: 0.3rem; border-radius: 1.6rem; width:6rem; background-color: darkgray;">
+                        <hr style="border: none; height: 0.3rem; border-radius:1.6rem; width:2rem; background-color: white; position:absolute; left:0;">
+                    </div>
+                    <div class=" d-flex" style="margin-left:0.4rem; display:flex; align-items:center;">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>
+                    <div class=" d-flex" style="margin-left:0.4rem; display:flex; align-items:center;">
+                        <i class="fa-solid fa-display"></i>
+                    </div>
+                    <div class="" style=" display:flex; align-items:center;">
+                            <i class="fa-solid fa-bars"></i>
+                    </div>
                 </div>
 
             </div>
+
         </section>
     </footer>
 </body>
